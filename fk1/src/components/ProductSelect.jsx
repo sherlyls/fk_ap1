@@ -48,8 +48,11 @@ export default function ProductSelect({ category, value, onChange, onLoaded }) {
           </option>
         ))}
       </select>
+
       {loading && <small>Sedang memuat...</small>}
       {err && <small className="error">{err}</small>}
+
+      
     </div>
   );
 }
